@@ -1,0 +1,987 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>GoEye</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="topbar">
+      <p>Buy Above ₹1200 & Get Free Gifts Worth ₹499</p>
+    </div>
+
+    <div class="header">
+      <div class="logo">
+        <img
+          src="https://goeye.in/cdn/shop/files/jpn_christmas_logo_goeye_png_1_100x.png?v=1704351210"
+          alt="Logo"
+        />
+      </div>
+      <div class="search-bar">
+        
+        <input type="text" placeholder="SEARCH..." />
+        
+      </div>
+      <div class="icons">
+        <div class="icon">
+          <span class="material-symbols-outlined" id="ri">
+            person
+            </span>
+          ACCOUNT</div>
+        <div class="icon">
+          <span class="material-symbols-outlined" id="ri">
+            shopping_cart
+            </span>
+          CART</div>
+      </div>
+      <button class="menu-btn" onclick="toggleSidebar()">☰</button>
+    </div>
+
+    <div class="hed-nav">
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">SHOP</a></li>
+          <li><a href="#">COLLECTIONS</a></li>
+          <li><a href="#">SUNGLASSES</a></li>
+          <li><a href="#">ACCESSORIES</a></li>
+          <li><a href="#">RETURN / EXCHANGE CENTER</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+      <button class="close-btn" onclick="toggleSidebar()">
+        <span class="material-symbols-outlined">
+          close
+          </span>
+      </button>
+      <ul>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">COLLECTIONS</a></li>
+        <li><a href="#">SUNGLASSES</a></li>
+        <li><a href="#">ACCESSORIES</a></li>
+        <li><a href="#">RETURN / EXCHANGE CENTER</a></li>
+      </ul>
+    </div>
+
+    <!-- second -section -->
+
+    <div class="slider">
+      <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item">
+            <img
+              src="https://goeye.in/cdn/shop/files/orange_1512x.jpg?v=1717754665"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item active">
+            <img
+              src="https://goeye.in/cdn/shop/files/destop_1512x.jpg?v=1718689540"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://goeye.in/cdn/shop/files/apex_4dc3fb59-6fbe-4718-ae6f-dd764d9439b5_1512x.jpg?v=1717061680"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Circle section -->
+    <div class="circle-container">
+      <div class="circle">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0570/8120/0663/files/mav.jpg?v=1716552211"
+          alt="cir"
+        />
+   
+      </div>
+      <!-- <p>Maverick</p> -->
+ 
+      <div class="circle">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0570/8120/0663/files/clip_on_45e4a6cc-999a-4a83-91f1-727bd2315da3.jpg?v=1711392039"
+          alt=""
+        />
+      </div>
+      <!-- <p class="cl">Clip On</p> -->
+      <div class="circle">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0570/8120/0663/files/air_c1df9e20-be37-4b82-ad55-20cb50f851d2.jpg?v=1711392039"
+          alt=""
+        />
+      </div>
+      <!-- <p>Air</p> -->
+      <div class="circle">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0570/8120/0663/files/glam_c62fb530-95cf-4f85-8b49-e64d64e30f27.jpg?v=1711392039"
+          alt=""
+        />
+      </div>
+      <!-- <p>Glam</p> -->
+      <div class="circle">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0570/8120/0663/files/goat_09d39656-34a7-4174-a1e0-51a1aa928b06.jpg?v=1711392039"
+          alt=""
+        />
+      </div>
+      <!-- <p>Goat</p> -->
+      <div class="circle">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0570/8120/0663/files/top_g_6505bdf0-08bc-4394-9a26-76fe30091adb.jpg?v=1711392039"
+          alt=""
+        />
+      </div>
+      <!-- <p class="ex">Exclusive</p> -->
+    </div>
+
+    <!-- Exclusive Collection -->
+     <div class="Exclusive ">
+        <h1>Exclusive Collection</h1>
+        <div class="row row-cols-2 row-cols-md-5 g-3">
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://goeye.in/cdn/shop/files/12_e628968a-87b2-4010-8a48-7c5224fb6bfe_180x.jpg?v=1705576935" class="card-img-top" alt="...">
+                        <img src="https://goeye.in/cdn/shop/files/IMG_2542_1800x1800.jpg?v=1712052867" class="card-img-top-hover" alt="...">
+                    </div>
+                   
+                    <div class="card-body">
+                        <h6 class="card-title">Voyage Exclusive Black Wayfarer Eyeglasses for Men & Women (952MG4823-C2)</h6>
+                        <p class="card-text">Price
+                            Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://goeye.in/cdn/shop/files/DSC4394_180x.jpg?v=1703058236" class="card-img-top" alt="...">
+                        <img src="https://goeye.in/cdn/shop/files/DSC4307_1800x1800.jpg?v=1703058236" class="card-img-top-hover" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h6 class="card-title">Voyage Apex Matt Black Wayfarer Eyeglasses for Men & Women (V62003MG5354-C1)</h6>
+                        <p class="card-text">Price
+                            Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://goeye.in/cdn/shop/files/13_96c3472e-070e-4515-b707-1d55dd5a30db_1800x1800.jpg?v=1705576796" class="card-img-top" alt="...">
+                        <img src="https://goeye.in/cdn/shop/files/97123MG5246_1_1800x1800.jpg?v=1718452031" class="card-img-top-hover" alt="...">
+                    </div>
+                   
+                    <div class="card-body">
+                        <h6 class="card-title">Voyage Exclusive Black & Golden Wayfarer Eyeglasses for Men & Women (97123MG5246-C1)</h6>
+                        <p class="card-text">Price
+                            Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://goeye.in/cdn/shop/files/100_1800x1800.jpg?v=1705576470" class="card-img-top" alt="...">
+                        <img src="https://goeye.in/cdn/shop/files/front_d484f9db-e421-4001-ad38-e860efc0a992_1800x1800.jpg?v=1705576470" class="card-img-top-hover" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+                        <p class="card-text">Price
+                            Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://goeye.in/cdn/shop/files/case_1800x1800.png?v=1709792942" class="card-img-top" alt="...">
+                        <img src="https://goeye.in/cdn/shop/files/front_1800x1800.png?v=1709792942" class="card-img-top-hover" alt="...">
+                    </div>
+                   
+                    <div class="card-body">
+                        <h6 class="card-title">Voyage Exclusive Black & Golden Wayfarer Eyeglasses for Men & Women (1502MG5406-C1)</h6>
+                        <p class="card-text">Price
+                            Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,499 Rs. 1,499Save Rs. 1,501</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://goeye.in/cdn/shop/files/case_56eaa857-d443-4c1e-a7dd-b6716c227492_1800x1800.png?v=1709793197" class="card-img-top" alt="...">
+                        <img src="https://goeye.in/cdn/shop/files/front_84cec2a7-a7ed-4aa1-918b-7c50826c247a_1800x1800.png?v=1709793197" class="card-img-top-hover" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h6 class="card-title">Voyage Exclusive Black & Golden Wayfarer Eyeglasses for Men & Women (LH095MG5389-C2)</h6>
+                        <p class="card-text">Price
+                            Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://goeye.in/cdn/shop/files/case_2e05eb1a-7145-4f89-83e2-4ef9e51ee7f2_1800x1800.jpg?v=1706531578" class="card-img-top" alt="...">
+                        <img src="https://goeye.in/cdn/shop/files/45_03960800-824e-4fe4-a5ae-26ff966f0fb4_1800x1800.jpg?v=1706531578" class="card-img-top-hover" alt="...">
+                    </div>
+                   
+                    <div class="card-body">
+                        <h6 class="card-title">Voyage Exclusive Shine Black Round Eyeglasses for Men & Women (894PMG4474-C1)</h6>
+                        <p class="card-text">Price
+                            Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://goeye.in/cdn/shop/files/case_af465c8f-3d1a-4d1f-a2b5-94e2e09f7f07_1800x1800.jpg?v=1705487066" class="card-img-top" alt="...">
+                        <img src="https://goeye.in/cdn/shop/files/45_f4da4fe8-87a6-48be-920b-e823f65ab267_1800x1800.jpg?v=1706611951" class="card-img-top-hover" alt="...">
+                    </div>
+                  
+                    <div class="card-body">
+                        <h6 class="card-title">Voyage Exclusive Shine Black Square Eyeglasses for Men & Women (8774MG5244-C1)</h6>
+                        <p class="card-text">Price
+                            Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://goeye.in/cdn/shop/files/case_b567b681-8435-4c4a-8027-a7a86e7b06e5_1800x1800.jpg?v=1705486328" class="card-img-top" alt="...">
+                        <img src="https://goeye.in/cdn/shop/files/45_eb06a5cf-40c0-4d8e-9fa9-0076ed5c2a4e_1800x1800.jpg?v=1706611947" class="card-img-top-hover" alt="...">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h6 class="card-title">Voyage Exclusive Matt Black Square Eyeglasses for Men & Women (8774MG5245-C2)</h6>
+                        <p class="card-text">Price
+                            Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <div class="card-img-container">
+                        <img src="https://goeye.in/cdn/shop/files/case_ec128a15-f020-4869-ac25-5c729c915823_1800x1800.png?v=1709793148" class="card-img-top" alt="...">
+                        <img src="https://goeye.in/cdn/shop/files/front_8f2585a5-90b5-4972-bf02-3cf82a28b537_1800x1800.png?v=1709793148" class="card-img-top-hover" alt="...">
+                    </div>
+                  
+                    <div class="card-body">
+                        <h6 class="card-title">Voyage Exclusive Black Wayfarer Eyeglasses for Men & Women (LH095MG5388-C1)</h6>
+                        <p class="card-text">Price
+                            Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+        <!-- New section image  -->
+         <div class="new ">
+            <img src="https://goeye.in/cdn/shop/files/apex_4dc3fb59-6fbe-4718-ae6f-dd764d9439b5_1512x.jpg?v=1717061680" alt="">
+         </div>
+
+     <div class="APEX ">
+      <h1>APEX Collection</h1>
+      <div class="row row-cols-2 row-cols-md-5 g-3">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-img-container">
+                    <img src="https://goeye.in/cdn/shop/files/V62003MG5356_1800x1800.jpg?v=1715294909" class="card-img-top" alt="...">
+                    <img src="https://goeye.in/cdn/shop/files/V62003MG5356-1_1800x1800.jpg?v=1715294909" class="card-img-top-hover" alt="...">
+                </div>
+               
+                <div class="card-body">
+                    <h6 class="card-title">Voyage Exclusive Black Wayfarer Eyeglasses for Men & Women (952MG4823-C2)</h6>
+                    <p class="card-text">Price
+                        Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-img-container">
+                    <img src="https://goeye.in/cdn/shop/files/V62003MG5354_1800x1800.jpg?v=1715294945" class="card-img-top" alt="...">
+                    <img src="https://goeye.in/cdn/shop/files/V62003MG5354-1_1800x1800.jpg?v=1715294945" class="card-img-top-hover" alt="...">
+                </div>
+                
+                <div class="card-body">
+                    <h6 class="card-title">Voyage Apex Matt Black Wayfarer Eyeglasses for Men & Women (V62003MG5354-C1)</h6>
+                    <p class="card-text">Price
+                        Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-img-container">
+                    <img src="https://goeye.in/cdn/shop/files/V62003MG5358_1800x1800.jpg?v=1715294962" class="card-img-top" alt="...">
+                    <img src="https://goeye.in/cdn/shop/files/V62003MG5358-1_1800x1800.jpg?v=1715294962" class="card-img-top-hover" alt="...">
+                </div>
+               
+                <div class="card-body">
+                    <h6 class="card-title">Voyage Exclusive Black & Golden Wayfarer Eyeglasses for Men & Women (97123MG5246-C1)</h6>
+                    <p class="card-text">Price
+                        Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-img-container">
+                    <img src="https://goeye.in/cdn/shop/files/V62006MG5373_2_1800x1800.jpg?v=1718694558" class="card-img-top" alt="...">
+                    <img src="https://goeye.in/cdn/shop/files/V62006MG5373_3_1800x1800.jpg?v=1718694558" class="card-img-top-hover" alt="...">
+                </div>
+                
+                <div class="card-body">
+                    <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+                    <p class="card-text">Price
+                        Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+              <div class="card-img-container">
+                  <img src="https://goeye.in/cdn/shop/files/V62003MG5359_1800x1800.jpg?v=1715294926" class="card-img-top" alt="...">
+                  <img src="https://goeye.in/cdn/shop/files/V62003MG5359-1_1800x1800.jpg?v=1715294926" class="card-img-top-hover" alt="...">
+              </div>
+              
+              <div class="card-body">
+                  <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+                  <p class="card-text">Price
+                      Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+              </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+            <div class="card-img-container">
+                <img src="https://goeye.in/cdn/shop/files/V62003MG5355_1800x1800.jpg?v=1715294980" class="card-img-top" alt="...">
+                <img src="https://goeye.in/cdn/shop/files/V62003MG5355-1_1800x1800.jpg?v=1715294980" class="card-img-top-hover" alt="...">
+            </div>
+            
+            <div class="card-body">
+                <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+                <p class="card-text">Price
+                    Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/V62006MG5374_1800x1800.jpg?v=1715294906" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/V62006MG5374-1_1800x1800.jpg?v=1715294906" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price
+                  Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+          </div>
+      </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+        <div class="card-img-container">
+            <img src="https://goeye.in/cdn/shop/files/V62003MG5357_1800x1800.jpg?v=1715295019" class="card-img-top" alt="...">
+            <img src="https://goeye.in/cdn/shop/files/V62003MG5357-1_1800x1800.jpg?v=1715295019" class="card-img-top-hover" alt="...">
+        </div>
+        
+        <div class="card-body">
+            <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+            <p class="card-text">Price
+                Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+        </div>
+    </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+      <div class="card-img-container">
+          <img src="https://goeye.in/cdn/shop/files/V62006MG5372_2_1800x1800.jpg?v=1718694553" class="card-img-top" alt="...">
+          <img src="https://goeye.in/cdn/shop/files/V62006MG5372_3_1800x1800.jpg?v=1718694553" class="card-img-top-hover" alt="...">
+      </div>
+      
+      <div class="card-body">
+          <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+          <p class="card-text">Price
+              Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+      </div>
+  </div>
+</div>
+<div class="col">
+  <div class="card h-100">
+      <div class="card-img-container">
+          <img src="https://goeye.in/cdn/shop/files/V62005MG5368_1800x1800.jpg?v=1715294898" class="card-img-top" alt="...">
+          <img src="https://goeye.in/cdn/shop/files/V62005MG5368-1_1800x1800.jpg?v=1715294898" class="card-img-top-hover" alt="...">
+      </div>
+      
+      <div class="card-body">
+          <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+          <p class="card-text">Price
+              Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+      </div>  
+    </div>
+   </div>
+  </div>
+</div>
+      
+<!-- new 12 section -->
+<div class="adi">
+  <div class="newadi">
+    <img src="https://goeye.in/cdn/shop/files/air_1512x_aaa90d40-39c8-4f4a-b672-5e9a979b957d_1512x.webp?v=1711391675" alt="">
+ </div>
+ <!-- AIR collection -->
+    <div class="AIR">
+      <h1>AIR Collection</h1>
+      <div class="row row-cols-2 row-cols-md-5 g-3">
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-img-container">
+                    <img src="https://goeye.in/cdn/shop/files/Untitled-2_54e6b193-e599-41b3-9481-7370634b02ba_1800x1800.jpg?v=1690287848" class="card-img-top" alt="...">
+                    <img src="https://goeye.in/cdn/shop/files/DSC5376_1800x1800.jpg?v=1690287848" class="card-img-top-hover" alt="...">
+                </div>
+               
+                <div class="card-body">
+                    <h6 class="card-title">Voyage Exclusive Black Wayfarer Eyeglasses for Men & Women (952MG4823-C2)</h6>
+                    <p class="card-text">Price
+                        Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-img-container">
+                    <img src="https://goeye.in/cdn/shop/files/Untitled-2_37925f55-0477-4a5a-99de-4def8c3a982f_1800x1800.jpg?v=1690288024" class="card-img-top" alt="...">
+                    <img src="https://goeye.in/cdn/shop/files/DSC5403_1800x1800.jpg?v=1690288024" class="card-img-top-hover" alt="...">
+                </div>
+                
+                <div class="card-body">
+                    <h6 class="card-title">Voyage Apex Matt Black Wayfarer Eyeglasses for Men & Women (V62003MG5354-C1)</h6>
+                    <p class="card-text">Price
+                        Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-img-container">
+                    <img src="https://goeye.in/cdn/shop/files/Untitled-2_37ae30e4-4888-4310-9156-23424dcadbb9_1800x1800.jpg?v=1690288566" class="card-img-top" alt="...">
+                    <img src="https://goeye.in/cdn/shop/files/DSC5638_1800x1800.jpg?v=1690288566" class="card-img-top-hover" alt="...">
+                </div>
+               
+                <div class="card-body">
+                    <h6 class="card-title">Voyage Exclusive Black & Golden Wayfarer Eyeglasses for Men & Women (97123MG5246-C1)</h6>
+                    <p class="card-text">Price
+                        Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <div class="card-img-container">
+                    <img src="https://goeye.in/cdn/shop/files/910MG4377_1800x1800.jpg?v=1690882685" class="card-img-top" alt="...">
+                    <img src="https://goeye.in/cdn/shop/files/Q_2_6c02fed7-655b-4fcf-a949-0fc5beb56399_1800x1800.jpg?v=1690882685" class="card-img-top-hover" alt="...">
+                </div>
+                
+                <div class="card-body">
+                    <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+                    <p class="card-text">Price
+                        Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+          <div class="card h-100">
+              <div class="card-img-container">
+                  <img src="https://goeye.in/cdn/shop/files/902MG4387_1800x1800.jpg?v=1690878877" class="card-img-top" alt="...">
+                  <img src="https://goeye.in/cdn/shop/files/Q_2_b368cf79-1516-4208-ae71-549fdcd45a27_1800x1800.jpg?v=1690878877" class="card-img-top-hover" alt="...">
+              </div>
+              
+              <div class="card-body">
+                  <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+                  <p class="card-text">Price
+                      Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+              </div>
+          </div>
+      </div>
+    </div>
+ <!-- AIR collection end -->
+ <!-- new 12 end -->
+
+ <!-- new 13 start -->
+ <div class="new ">
+  <img src="https://goeye.in/cdn/shop/files/rush_e681ba2f-3a4b-4a38-85a9-94cc7f8b8bc8_1512x.jpg?v=1717062482" alt="">
+</div>
+<!-- Rush new page -->
+<div class="AIR">
+  <h1>RUSH Collection</h1>
+  <div class="row row-cols-2 row-cols-md-5 g-3">
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-img-container">
+                <img src="https://goeye.in/cdn/shop/files/VG9004MG5431-7_1800x1800.jpg?v=1712816771" class="card-img-top" alt="...">
+                <img src="https://goeye.in/cdn/shop/files/VG9004MG5431-2_1800x1800.jpg?v=1712816771" class="card-img-top-hover" alt="...">
+            </div>
+           
+            <div class="card-body">
+                <h6 class="card-title">Voyage Exclusive Black Wayfarer Eyeglasses for Men & Women (952MG4823-C2)</h6>
+                <p class="card-text">Price
+                    Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-img-container">
+                <img src="https://goeye.in/cdn/shop/files/DSC01597_1800x1800.jpg?v=1712742487" class="card-img-top" alt="...">
+                <img src="https://goeye.in/cdn/shop/files/DSC01456_1800x1800.jpg?v=1713434178" class="card-img-top-hover" alt="...">
+            </div>
+            
+            <div class="card-body">
+                <h6 class="card-title">Voyage Apex Matt Black Wayfarer Eyeglasses for Men & Women (V62003MG5354-C1)</h6>
+                <p class="card-text">Price
+                    Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-img-container">
+                <img src="https://goeye.in/cdn/shop/files/VG9003MG5426_1800x1800.jpg?v=1713443296" class="card-img-top" alt="...">
+                <img src="https://goeye.in/cdn/shop/files/VG9003MG5426-2_1800x1800.jpg?v=1713443296" class="card-img-top-hover" alt="...">
+            </div>
+           
+            <div class="card-body">
+                <h6 class="card-title">Voyage Exclusive Black & Golden Wayfarer Eyeglasses for Men & Women (97123MG5246-C1)</h6>
+                <p class="card-text">Price
+                    Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-img-container">
+                <img src="https://goeye.in/cdn/shop/files/VG9001MG5409-7_1800x1800.jpg?v=1712816111" class="card-img-top" alt="...">
+                <img src="https://goeye.in/cdn/shop/files/VG9001MG5409-2_1800x1800.jpg?v=1712816111" class="card-img-top-hover" alt="...">
+            </div>
+            
+            <div class="card-body">
+                <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+                <p class="card-text">Price
+                    Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/VG9001MG5411-7_1800x1800.jpg?v=1712816143" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/VG9001MG5411-2_1800x1800.jpg?v=1712816143" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/VG9002MG5420-7_1800x1800.jpg?v=1712816452" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/VG9002MG5420-2_1800x1800.jpg?v=1712816452" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/VG9005MG5433-7_1800x1800.jpg?v=1712816783" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/VG9005MG5433-2_1800x1800.jpg?v=1712816783" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/VG9003MG5421-7_1800x1800.jpg?v=1712816471" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/VG9003MG5421-2_1800x1800.jpg?v=1712816471" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/VG9005MG5438-7_1800x1800.jpg?v=1712816829" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/VG9005MG5438-2_1800x1800.jpg?v=1712816829" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/VG9005MG5438-7_1800x1800.jpg?v=1712816829" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/VG9005MG5438-2_1800x1800.jpg?v=1712816829" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+</div>
+ <!-- Rush new oage end -->
+  <!-- new 13 end -->
+
+  <!-- adi -->
+   
+ <!-- new 14 start -->
+ <div class="new ">
+  <img src="https://goeye.in/cdn/shop/files/lumina02_1512x.jpg?v=1717156204" alt="">
+</div>
+<!-- lumia new page -->
+<div class="AIR">
+  <h1>LUMINA Collection</h1>
+  <div class="row row-cols-2 row-cols-md-5 g-3">
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-img-container">
+                <img src="https://goeye.in/cdn/shop/files/81207MG5405-0_1800x1800.jpg?v=1715239305" class="card-img-top" alt="...">
+                <img src="https://goeye.in/cdn/shop/files/81207MG5405-1_1800x1800.jpg?v=1715239305" class="card-img-top-hover" alt="...">
+            </div>
+           
+            <div class="card-body">
+                <h6 class="card-title">Voyage Exclusive Black Wayfarer Eyeglasses for Men & Women (952MG4823-C2)</h6>
+                <p class="card-text">Price
+                    Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-img-container">
+                <img src="https://goeye.in/cdn/shop/files/81207MG5403-0_1800x1800.jpg?v=1715239284" class="card-img-top" alt="...">
+                <img src="https://goeye.in/cdn/shop/files/81207MG5403-1_1800x1800.jpg?v=1715239284" class="card-img-top-hover" alt="...">
+            </div>
+            
+            <div class="card-body">
+                <h6 class="card-title">Voyage Apex Matt Black Wayfarer Eyeglasses for Men & Women (V62003MG5354-C1)</h6>
+                <p class="card-text">Price
+                    Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-img-container">
+                <img src="https://goeye.in/cdn/shop/files/81207MG5404-0_1800x1800.jpg?v=1718454123" class="card-img-top" alt="...">
+                <img src="https://goeye.in/cdn/shop/files/81207MG5404-1_1800x1800.jpg?v=1718454123" class="card-img-top-hover" alt="...">
+            </div>
+           
+            <div class="card-body">
+                <h6 class="card-title">Voyage Exclusive Black & Golden Wayfarer Eyeglasses for Men & Women (97123MG5246-C1)</h6>
+                <p class="card-text">Price
+                    Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <div class="card-img-container">
+                <img src="https://goeye.in/cdn/shop/files/81207MG5402-0_1800x1800.jpg?v=1715239272" class="card-img-top" alt="...">
+                <img src="https://goeye.in/cdn/shop/files/81207MG5402-1_1800x1800.jpg?v=1715239272" class="card-img-top-hover" alt="...">
+            </div>
+            
+            <div class="card-body">
+                <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+                <p class="card-text">Price
+                    Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/81202MG5395-0_1800x1800.jpg?v=1715238983" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/81202MG5395-1_1800x1800.jpg?v=1715238983" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/81205MG5400-0_1800x1800.jpg?v=1715239128" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/81205MG5400-1_1800x1800.jpg?v=1715239128" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/81202MG5394-0_1800x1800.jpg?v=1715238973" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/81202MG5394-1_1800x1800.jpg?v=1715238973" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/81202MG5393-0_1800x1800.jpg?v=1715238842" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/81202MG5393-1_1800x1800.jpg?v=1715238842" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/81205MG5399_1_1800x1800.jpg?v=1714022231" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/81205MG5399_2_1800x1800.jpg?v=1714022231" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+          <div class="card-img-container">
+              <img src="https://goeye.in/cdn/shop/files/81202MG5391-0_1800x1800.jpg?v=1715238820" class="card-img-top" alt="...">
+              <img src="https://goeye.in/cdn/shop/files/81202MG5391-1_1800x1800.jpg?v=1715238820" class="card-img-top-hover" alt="...">
+          </div>
+          
+          <div class="card-body">
+              <h6 class="card-title">Voyage Exclusive Transparent & Golden Wayfarer Eyeglasses for Men & Women (97123MG5247-C2)</h6>
+              <p class="card-text">Price Regular priceRs. 3,000Rs. 3,000 Sale priceRs. 1,199 Rs. 1,199Save Rs. 1,801</p>
+         </div>
+        </div>
+    </div>
+</div>
+ <!-- lumia new oage end -->
+  <!-- new 14 end -->
+
+
+  <!-- new 15  -->
+    <div class="content">
+       <h2>
+        "Make sure you choose the right eyewear" the motto we swear by.</h2>
+        <h6>GoEye is a brand that meets your needs with stylish and irresistible eyewear at modest prices. The purpose is to bring out different models of eyewear that best fit your personality and style. All our goods are handmade with love in India. GoEye has transformed the eyeglass industry through its exclusive, bold designs.</h6>
+
+    </div>
+   <!-- new 15 end  -->
+
+   <!--new 16  -->
+    <div class="box">
+      <div class="box1">
+        <img src="https://goeye.in/cdn/shop/files/ghf7r8fugk_360x.jpg?v=1701865402" alt="">
+        <h3>Finest Quality</h3>
+        <h6>GoEye strives to bring out the highest quality luxury eyewear which would be the best choice for you.</h6>
+      </div>
+      <div class="box2">
+        <img src="https://goeye.in/cdn/shop/files/website1_360x.jpg?v=1701865049" alt="">
+        <h3>Fast Delivery</h3>
+        <h6>We deliver goods and services directly to you at the comfort of your home.</h6>
+      </div>
+      <div class="box3">
+        <img src="https://goeye.in/cdn/shop/files/ffvuhb_360x.jpg?v=1701865343" alt="">
+        <h3>Secure Payment</h3>
+        <h6>We make it easy for customers to pay almost any way and anywhere with a 100% secure payment.</h6>
+      </div>
+     
+
+    </div>
+  <!-- new 16 end-->
+
+  <!-- footer -->
+
+<footer class="footer">
+  <div class="footer-left">
+    <h3>Get in touch</h3>
+    <p>Shipping Policy
+      Privacy Policy
+      Terms & Conditions</p>
+    <ul class="social-icons">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+  </div>
+  
+  <div class="footer-center">
+    <div>
+      <i class="fa fa-map-marker"></i>
+      <p><span>123 Street, City</span> State, Country</p>
+    </div>
+    
+    <div>
+      <i class="fa fa-phone"></i>
+      <p>+1234567890</p>
+    </div>
+    
+    <div>
+      <i class="fa fa-envelope"></i>
+      <p><a href="mailto:info@example.com">info@example.com</a></p>
+    </div>
+  </div>
+  
+  <div class="footer-right">
+    <p class="footer-company-about">
+      <span>GoEye</span>
+      About Us
+      Share Your Prescription
+      Terms of Service
+      Return / Exchange Policy
+      Track Your Order
+      Frame Guide
+    </p>
+  </div>
+</footer>
+
+   <!-- footer end -->
+    <script src="Index.js"></script>
+    <script>
+      function toggleSidebar() {
+        document.getElementById("sidebar").classList.toggle("active");
+      }
+
+      // JavaScript to handle sidebar toggle
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuBtn = document.querySelector(".menu-btn");
+        const sidebar = document.querySelector(".sidebar");
+        const closeBtn = document.querySelector(".sidebar .close-btn");
+
+        menuBtn.addEventListener("click", function () {
+          sidebar.classList.add("active");
+          menuBtn.classList.add("hidden");
+        });
+
+        closeBtn.addEventListener("click", function () {
+          sidebar.classList.remove("active");
+          menuBtn.classList.remove("hidden");
+        });
+      });
+    </script>
+  </body>
+</html>
